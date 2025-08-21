@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "python3 .claude/hooks/notification.py" }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "python3 .claude/hooks/notification.py" }
+        ]
+      }
+    ]
+  }
+}
